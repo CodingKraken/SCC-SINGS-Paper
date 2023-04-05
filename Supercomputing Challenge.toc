@@ -1,0 +1,20 @@
+\contentsline {section}{Abstract \& Executive Summary}{3}{section*.2}%
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {section}{\numberline {2}General Physics}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Formulation of Gravity}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Modelling Collisions}{6}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Force Calculation}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Direct Method}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Barnes-Hut}{9}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Integration}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Euler Methods}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Runge-Kutta}{12}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Leapfrog Integration}{13}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Computation}{13}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Why C?}{14}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Modularity}{14}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Parallelisation}{17}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Model Validation}{17}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Next Steps}{20}{section.6}%
+\contentsline {section}{\numberline {7}Conclusion}{21}{section.7}%
+\contentsline {section}{Acknowledgements}{22}{section*.12}%
