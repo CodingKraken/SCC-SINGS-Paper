@@ -434,7 +434,7 @@ The parallelisation of SINGS is achieved via the use of OpenMP, the only externa
 
 To demonstrate the effectiveness of this parallelisation, we ran several simulations using the direct method and our two symplectic integrators with various thread counts up to 12, then normalised the y-axis by taking $1/\text{runtime}$ (we take runtime to be roughly $\propto 1/\text{threads}$). The results of this are shown in Figure \ref{fig:runtimethreads}.
 \begin{figure}[h]
-\caption{A figure showing $1/\text{runtime}$ for various threadcounts between the leapfrog and symplectic Euler integration schemes.}
+\caption{A figure showing $1/\text{runtime}$ for various thread counts between the leapfrog and symplectic Euler integration schemes.}
 \centerline{\includegraphics[width=.75\textwidth]{threadsruntime.pdf}}
 \label{fig:runtimethreads}
 \end{figure}
