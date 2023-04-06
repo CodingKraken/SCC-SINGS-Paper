@@ -297,7 +297,7 @@ The other Euler method SINGS employs is the symplectic (sometimes, the semi-impl
 \noindent Note that the order in which these computations have been made is flipped from \eqref{eq:euler}. While this method is still of the first order, its symplectic nature makes it ideal for simple and even relatively complex simulations.
 
 \subsection{Runge-Kutta} \label{subsec:rk4}
-The Runge-Kutta method is a non-symplectic method in SINGS. It computes functional derivatives at 4 times between $t$ and $t + \delta t$, and weights them to produce a prediction for the function at the next time step. The method we use, the fourth-order Runge-Kutta method (henceforth RK4) has fourth order error, which makes it quite appealing despite it's non-symplectic nature.
+The Runge-Kutta method is a non-symplectic method in SINGS. It computes functional derivatives at times between $t$ and $t + \Delta t$, and weights them to produce a prediction for the function at the next time step. The method we use, the fourth-order Runge-Kutta method (henceforth RK4) has fourth order error, which makes it quite appealing despite it's non-symplectic nature.
 
 If we consider $\va{y}_i$ to be a vector containing the dependent variables of our system $\langle \va{r}_i, \va{v}_i \rangle$ and $\va{f}$ to be a vector containing the derivatives of $\va{y}_i$, we can compute $\va{y}_{i+1}$ for our second order system by 
 \begin{subequations} \label{eq:rk4}
