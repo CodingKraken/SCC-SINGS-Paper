@@ -253,17 +253,19 @@ as computed across various SINGS simulations.
 \label{fig:errortheta}
 \end{figure}
 
-These errors though are more than manageable for carefully chosen values of theta, and allow us to simulate far larger and more complex systems. Figure \ref{fig:sings1bh} features frames from the 2 dimensional SINGS 1 code illustrating the massive reduction in computations enabled by the Barnes-Hut method.
+These errors though are more than manageable for carefully chosen values of $\theta$, and allow us to simulate far larger and more complex systems. Figure \ref{fig:sings1bh} features frames from the 2 dimensional SINGS 1 code illustrating the massive reduction in computations enabled by the Barnes-Hut method.
 \begin{figure}
 \centering
+\setlength{\fboxsep}{-1pt}
+\setlength{\fboxrule}{1pt}
 \begin{subfigure}[t]{.45\textwidth}
   \centering
-  \includegraphics[width=.9\textwidth]{sings1fulltree.png}
+  \fbox{\includegraphics[width=.9\textwidth]{sings1fulltree.png}}
   \label{fig:sub1}
 \end{subfigure}%
-\begin{subfigure}[t]{.5\textwidth}
+\begin{subfigure}[t]{.45\textwidth}
   \centering
-  \includegraphics[width=.9\textwidth]{sings1sometree.png}
+  \fbox{\includegraphics[width=.9\textwidth]{sings1sometree.png}}
   \label{fig:sub2}
 \end{subfigure}
 \caption{A 2 dimensional SINGS 1 simulation of 12,000 particles, modelling the collision between two galaxies. The frame on the left features the Barnes-Hut tree, the one on the right, the nodes used in calculating the force on a particle on the far left.}
