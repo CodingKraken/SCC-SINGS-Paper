@@ -443,7 +443,7 @@ To demonstrate the effectiveness of this parallelisation, we ran several simulat
 
 
 \subsection{Model Validation} \label{subsec:validation}
-We can validate SINGS models by checking for the consistency of certain well known simulation parameters, and seeing how they evolve over the course of a simulation. Examples we've discussed earlier related to Plummer softening \ref{fig:epsilonerrs} and the Barnes-Hut method \ref{fig:errortheta}. Another method besides computing the force directly is measuring the simulation energy. Recalling \ref{subsec:gravity}, 
+We can validate SINGS models by checking for the consistency of certain well known simulation parameters, and seeing how they evolve over the course of a simulation. Examples we've discussed earlier related to Plummer softening (Figure \ref{fig:epsilonerrs}) and the Barnes-Hut method (Figure \ref{fig:errortheta}). Another method besides computing the force directly is measuring the simulation energy. Recalling \ref{subsec:gravity}, 
 \begin{equation}
 	U = -G \dfrac{m_im_j}{r_{ji}}
 	\tag{\ref{eq:newtonpotential}}
@@ -454,7 +454,7 @@ We can validate SINGS models by checking for the consistency of certain well kno
 	K = \frac{1}{2}m_i v_i^2
 \end{equation}
 
-\noindent thus, if we want to compute the total mechanical energy $E$ of the simulation at a time $t$, we can do a direct summation over all particle-pairs of their respective gravitational potential energies and ther kinetic energies. Doing this yields
+\noindent thus, if we want to compute the total mechanical energy $E$ of the simulation at a time $t$, we can do a direct summation over all particle-pairs of their respective gravitational potential energies and their kinetic energies. Doing this yields
 \begin{equation} \label{eq:totenergy}
 	E = \sum_{i \neq j}^{N} \frac{1}{2}m_iv_i^2 - G\frac{m_im_j}{r_{ji}}
 \end{equation}
