@@ -312,7 +312,7 @@ If we consider $\va{y}_i$ to be a vector containing the dependent variables of o
 	\end{align}
 \end{subequations}
 
-\noindent where $k_1$, $k_2$, $k_3$, and $k_4$ are the RK4 weights. In order to compute the various values of $\va{f}$, we propagate each individual the particle forward at their old velocity $\va{v}_i$ at the timesteps which are specified by the RK4 coefficeints. So while the integrator itself remains $\mathcal{O}(N)$ like all the other integrators, we are having to calculate the force on each particle at those new locations 4 separate times, thus compared to other integrators we'd expect to see compute times at least 4 times greater.
+\noindent where $k_1$, $k_2$, $k_3$, and $k_4$ are the RK4 weights. In order to compute the various values of $\va{f}$, we propagate each individual particle forward at their old velocity $\va{v}_i$ at the timesteps which are specified by the RK4 coefficeints. So while the integrator itself remains $\mathcal{O}(N)$ like all the other integrators, we are having to calculate the force on each particle at those new locations 4 separate times, thus compared to other integrators we'd expect to see compute times at least 4 times greater.
 
 \subsection{Leapfrog Integration} \label{subsec:leapfrog}
 Leapfrog integration is the final integration method provided by SINGS, and is the primary one used in major astrophysical simulation tools like GADGET (\citet{springel2005simulating}, \citet{springel2021simulating}). The Leapfrog integrator is a 3rd order symplectic integrator, where with our fixed timesteps we calculate our position and velocity vectors by
@@ -461,7 +461,7 @@ We can validate SINGS models by checking for the consistency of certain well kno
 	E = \sum_{i \neq j}^{N} \frac{1}{2}m_iv_i^2 - G\frac{m_im_j}{r_{ji}}
 \end{equation}
 
-This is one of the chief tools SINGS employs for diagnostics, as the reduction or increase in energy of the system over time, while expected (especially with low particle counts with many close-range interactions) might result in unrealistic outputs. A plot featuring the relative energy $E_{\text{rel}}$ (given by $E_{\text{rel}} = \left|\dfrac{E_f - E_i}{E_i}\right|$) across a simulation with various integrators is shown in Figure \ref{fig:energyerror}.
+This is one of the chief tools SINGS employs for diagnostics, as the reduction or increase in energy of the system over time, while expected (especially with low particle counts with many close-range interactions) might result in unrealistic outputs. A plot featuring the relative energy $E_{\text{rel}}$ (given by $E_{\text{rel}} = \left|\dfrac{E_f}{E_i}\right|$) across a simulation with various integrators is shown in Figure \ref{fig:energyerror}.
 \begin{figure}[h]
 \caption{A plot of the relative energy $E_{\text{rel}}$ over the course of a full simulation for various integrator choices.}
 \centerline{\includegraphics[width=.75\textwidth]{energyerror.pdf}}
